@@ -1,0 +1,20 @@
+[package]
+name = "lb_clmm"
+version = "0.8.6"
+description = "Created with Anchor"
+edition = "2021"
+
+[features]
+cpi = []
+no-entrypoint = []
+localnet = []
+devnet = []
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "lb_clmm"
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-gen = "0.3.1"
+bytemuck = { version = "1.13.1", features = ["derive", "min_const_generics"] }
